@@ -38,7 +38,9 @@ libjpegturbo_copts = select({
         "-mcpu=power8",
         "-mtune=power8",
     ],
-    "//conditions:default": [],
+    "//conditions:default": [
+    "-fvisibility=hidden -fPIC"
+    ],
 })
 
 cc_library(
