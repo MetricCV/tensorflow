@@ -10,13 +10,6 @@ if not bazel:
 
     ./bazel-<version>-installer-linux-x86_64.sh --prefix=/usr/local
 
-git clone https://github.com/tensorflow/tensorflow
-
-cd tensorflow
-
-git tag -l -n2
-
-git checkout r1.9
 
 change
     "//conditions:default": [],
